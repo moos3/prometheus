@@ -10,8 +10,10 @@ helmCharts:
     version: v2.6.5
     releaseName: loki-stack
     namespace: grafana-loki
+    installCRDs: true
   - name: grafana
     repo: https://grafana.github.io/helm-charts
     version: v6.30.2
     releaseName: grafana
     namespace: grafana-loki
+    installCRDs: true
